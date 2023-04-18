@@ -17,8 +17,7 @@ def generate_phonetic():
 
 nato_df = pd.read_csv("nato_phonetic_alphabet.csv")
 
-# Loop through rows of a data frame Keyword Method with iterrows()
+# Loop through rows of a DataFrame Keyword Method with iterrows()
 phonetic_dict = {row.letter: row.code for (index, row) in nato_df.iterrows()}
 
 generate_phonetic()
-
